@@ -1,0 +1,10 @@
+[Unit]
+Description=run bokeh server app
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/dvelasquez/bokeh_server/venv/bin/python /home/dvelasquez/bokeh_server/run_bokeh.py
+
+[Install]
+WantedBy=multi-user.target
