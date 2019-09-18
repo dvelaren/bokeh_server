@@ -27,7 +27,7 @@ def run(doc):
     click()
 
 # configure and run bokeh server
-kws = {'port': 5006, 'prefix': '/bokeh', 'allow_websocket_origin': ['*']}
+kws = {'port': 5006, 'prefix': '/bokeh', 'allow_websocket_origin': ['edar40.tk']}
 server = Server(run, **kws)
 server.start()
 if __name__ == '__main__':
